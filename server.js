@@ -57,7 +57,6 @@ app.get('/', function(req,res){
 
 app.use(function(req,res){
     challenge.length(function(len){
-        console.log(fourohfour)
         res.render('index',configurations({"contents":fourohfour, "page":"404", "colorScheme":ops.dualColor(len)}));
     })
 })

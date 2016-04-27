@@ -3,6 +3,9 @@
 {:else}
     <a id="viewStats" href="/stats">View Stats</a>
 {/eq}
+
+    <a id="configureViews" href="/stats">Configure Views</a>
+
 {@eq key=page value="manage"}
     <a id="viewStats" href="/">Back Home</a>
 {:else}

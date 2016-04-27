@@ -12,10 +12,10 @@ a {
   margin: 0 auto; }
 
 header {
-  background: #eee; }
+  background: #e2e2e2; }
   header #five-five-logo {
-    width: 300px;
-    margin: -30px 0 0 60px;
+    width: 225px;
+    margin: -30px 0 0 40px;
     height: auto;
     display: inline-block; }
     header #five-five-logo #side {
@@ -30,35 +30,36 @@ header {
     letter-spacing: 2px;
     margin: 0;
     position: relative;
-    left: -110px;
-    top: -55px; }
+    left: -80px;
+    top: -40px; }
     header h1 em {
       font-style: normal;
       font-weight: 400; }
 
 nav {
-  margin-top: 2px;
-  background-color: #2c7ab2;
-  padding: 6px 0; }
+  background-color: #f2f2f2;
+  padding: 0;
+  text-align: center; }
   nav a {
-    padding: 15px 0;
-    width: 33.3%;
+    padding: 25px 0;
+    width: 20%;
     display: inline-block;
-    font-size: 21px;
+    font-size: 17px;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #fff;
+    color: #2c7ab2;
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.8);
     border-right: 1px solid rgba(255, 255, 255, 0.3); }
     nav a:first-child {
       border-left: 1px solid rgba(255, 255, 255, 0.3); }
 
-#content {
-  padding-top: 30px; }
-  #content .oneChallenge {
-    border-radius: 8px;
-    background-color: #b22b2d;
-    margin: 30px 0 50px;
-    color: #fff; }
-    #content .oneChallenge:nth-child(2n) {
-      background-color: #2c7ab2; }
+#filterArea {
+  padding: 5px 0;
+  background-color: #2c7ab2; }
+
+#content > .oneChallenge {
+  background-color: #f2f2f2;
+  padding: 30px 0 40px; }
+  #content > .oneChallenge:nth-child(2n) {
+    background-color: #e2e2e2; }

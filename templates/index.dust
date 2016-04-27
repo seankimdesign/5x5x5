@@ -17,10 +17,10 @@
     <nav>
         <div class="container">
             {>navigation/}
-            {>filter/}
         </div>
     </nav>
-    <div id="content" class="container">
+    {>filter/}
+    <div id="content">
         {>challenges/}
         {>topics/}
         {>contents/}

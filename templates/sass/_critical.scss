@@ -17,10 +17,10 @@ a{
 }
 
 header{
-    background: #eee;
+    background: $darkGrayColor;
     #five-five-logo {
-        width: 300px;
-        margin: -30px 0 0 60px;
+        width: 225px;
+        margin: -30px 0 0 40px;
         height: auto;
         display: inline-block;
 
@@ -41,8 +41,8 @@ header{
         letter-spacing: 2px;
         margin: 0;
         position: relative;
-        left: -110px;
-        top: -55px;
+        left: -80px;
+        top: -40px;
 
         em{
             font-style: normal;
@@ -52,18 +52,19 @@ header{
 }
 
 nav{
-    margin-top: 2px;
-    background-color: $secondaryColor;
-    padding: 6px 0;
+    background-color: $lightGrayColor;
+    padding: 0;
+    text-align: center;
 
     a{
-        padding: 15px 0;
-        width: 33.3%;
+        padding: 25px 0;
+        width: 20%;
         display: inline-block;
-        font-size: 21px;
+        font-size: 17px;
+        font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 2px;
-        color: #fff;
+        color: $secondaryColor;
         text-shadow: 0 0 1px rgba(255,255,255,0.8);
         border-right: 1px solid rgba(255,255,255,0.3);
 
@@ -73,18 +74,31 @@ nav{
     }
 }
 
-#content{
-    padding-top: 30px;
+#filterArea{
+    padding: 5px 0;
+    background-color: $secondaryColor;
+}
 
-    .oneChallenge{
-        border-radius: 8px;
-        background-color: $primaryColor;
-        margin: 30px 0 50px;
-        color: #fff;
+#content{
+
+    > .oneChallenge{
+        background-color: $lightGrayColor;
+        padding: 30px 0 40px;
 
         &:nth-child(2n){
-            background-color: $secondaryColor;
+            background-color: $darkGrayColor;
         }
+
+        .entries{
+
+        }
+        .menuArea{
+
+        }
+        .timelineArea{
+
+        }
+
     }
 
 }
