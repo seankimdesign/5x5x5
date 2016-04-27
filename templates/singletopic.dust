@@ -1,0 +1,26 @@
+<div class="oneTopic{^isActive} inactive{/isActive}" data-count="{count}" data-topicid="{_id}">
+    <div class="topicInfo">
+        <div class="topicIcon">
+            {?hasIcon}
+                <img src="{iconSrc}"/>
+            {:else}
+                <form method="post" name="uploadIconForm" class="uploadIconForm" enctype="multipart/form-data" action="/upload" onsubmit="return false;">
+                    <input type="file" name="uploadIcon" class="uploadIcon"/>
+                    <label for="uploadIcon"></label>
+                    <input type="hidden" name="topicid" value="{_id}"/>
+                    <button type="submit" name="submit" class="iconUploader">Upload</button>
+                </form>
+            {/hasIcon}
+        </div>
+        <h4 class="topicName">{name}</h4>
+    </div>
+    <div class="buttons">
+        <a href="#" class="viewEntries">View Entries</a>
+        <a href="#" class="modifyTopic">Modify Topic</a>
+        <div class="modifyForm" style="display: none;">
+            <input type="text" class="editName"/>
+            <a class="submitEdit" href="#">EDIT</a>
+        </div>
+        <a href="#" class="removeTopic">Remove Topic</a>
+    </div>
+</div>

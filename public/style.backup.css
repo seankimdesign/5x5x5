@@ -1,0 +1,54 @@
+body{
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+    background-color: #ccc;
+}
+
+#main{
+    max-width: 1370px;
+    background-color: #0080d7;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+header{
+    text-align: center;
+}
+
+.oneEntry {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.imageFrame {
+    width: 250px;
+    height: auto;
+}
+
+.imageFrame > img {
+    width: 100%;
+}
+
+#manageView > div {
+    width: 50%;
+    display: inline-block;
+}
+
+#manageView .buttons > a {
+    display: block;
+}
+
+.oneTopic {
+    margin-top: 20px;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.topicIcon > img {
+    width: 80px;
+    margin: 10px;
+}
+
+.topicIcon, h4.topicName {
+    display: inline-block;
+}

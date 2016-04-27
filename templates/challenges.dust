@@ -1,0 +1,35 @@
+{#challenges}
+
+    <div class="oneChallenge{?isCurrent} currentChallenge{/isCurrent} {designation}Challenge" data-catid="{order}">
+
+        <div class="entries">
+            <h3>{name}</h3>
+            {?isCurrent}
+                <div id="newEntryBox">
+                    <form id="entryUploadForm" method="post" enctype="multipart/form-data" action="/upload" onsubmit="return false;">
+                        <input type="file" name="uploadEntry" class="uploadEntry"/>
+                        <input type="hidden" name="entryid" value="{_id}"/>
+                        <label for="uploadEntry"></label>
+                        <button onclick="fnObj.uploadEntry();" name="submit">Upload</button>
+                    </form>
+                </div>
+            {/isCurrent}
+            {>entries/}
+        </div>
+
+        <div class="menuArea">
+            <a class="minimizeEntry">-</a>
+            <a class="entryDetails">-</a>
+            <a class="entryStatistics">-</a>
+            <a class="viewAllTopic">-</a>
+            <a class="viewAllCategory">-</a>
+            <a class="editEntry">-</a>
+        </div>
+
+        <div class="timelineArea">
+            <div class="daysElapsed"></div>
+        </div>
+
+    </div>
+
+{/challenges}

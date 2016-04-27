@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{page|uppercaser} | Five x Five x Five</title>
+    <link rel="stylesheet" href="{stylePath}/critical-{colorScheme}.css"/>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans:400,700">
+</head>
+
+<body class="page_{page} color_{colorScheme}">
+    <header>
+        <div class="container">
+            {>logosvg/}
+            <h1>Five <em>by</em> Five <em>by</em> Five</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            {>navigation/}
+            {>filter/}
+        </div>
+    </nav>
+    <div id="content" class="container">
+        {>challenges/}
+        {>topics/}
+        {>contents/}
+    </div>
+
+    <script src="{scriptPath}/util.js" type="text/javascript"></script>
+    <script src="{scriptPath}/dust-core.min.js" type="text/javascript"></script>
+    <script src="{scriptPath}/dust-helpers.min.js" type="text/javascript"></script>
+    <script src="{templatePath}/templates.js" type="text/javascript"></script>
+
+    {@select key=page}
+        {@eq value="manage"}
+            <script src="{scriptPath}/manage.js" type="text/javascript"></script>
+        {/eq}
+        {@eq value="home"}
+            <script src="{scriptPath}/main.js" type="text/javascript"></script>
+            <link rel="stylesheet" href="{stylePath}/styles.css"/>
+        {/eq}
+    {/select}
+</body>
+</html>

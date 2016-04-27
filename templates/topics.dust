@@ -1,0 +1,22 @@
+{#topics}
+    <div id="manageView">
+        <div id="designList">
+            {#design}
+                {>singletopic/}
+            {/design}
+            <div id="designForm" class="newTopicForm">
+                <input type="text" name="designTopic" id="designTopic"/>
+                <a href="#" class="newTopicButton" id="newDesignTopicSubmit">Submit New Design Topic</a>
+            </div>
+        </div>
+        <div id="drawingList">
+            {#drawing}
+                {>singletopic/}
+            {/drawing}
+            <div id="drawingForm" class="newTopicForm">
+                <input type="text" name="drawingTopic" id="drawingTopic"/>
+                <a href="#" class="newTopicButton" id="newDrawingTopicSubmit">Submit New Drawing Topic</a>
+            </div>
+        </div>
+    </div>
+{/topics}

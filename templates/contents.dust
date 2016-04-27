@@ -1,0 +1,20 @@
+{#contents}
+    <div id="staticPage">
+        {#markup}
+            {@select key=tag}
+                {@eq value="img"}
+                    <img {?classes}class="{classes}"{/classes} src="{content}"/>
+                {/eq}
+                {@eq value="div"}
+                    <div {?classes}class="{classes}"{/classes}>{content}</div>
+                {/eq}
+                {@eq value="p"}
+                    <p {?classes}class="{classes}"{/classes}>{content}</p>
+                {/eq}
+                {@eq value="h2"}
+                    <h2 {?classes}class="{classes}"{/classes}>{content}</h2>
+                {/eq}
+            {/select}
+        {/markup}
+    </div>
+{/contents}

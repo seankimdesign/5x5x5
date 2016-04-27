@@ -1,0 +1,90 @@
+@import 'config';
+
+body{
+    background: #fff;
+    margin: 0;
+    font-family: $fontFamily;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: $containerWidth;
+    text-align: center;
+    margin: 0 auto;
+}
+
+header{
+    background: #eee;
+    #five-five-logo {
+        width: 300px;
+        margin: -30px 0 0 60px;
+        height: auto;
+        display: inline-block;
+
+        #side{
+            fill: $primaryColor;
+        }
+
+        #face{
+            fill: #fff;
+        }
+    }
+
+    h1{
+        color: $primaryColor;
+        font-size: 32px;
+        text-transform: uppercase;
+        display: inline-block;
+        letter-spacing: 2px;
+        margin: 0;
+        position: relative;
+        left: -110px;
+        top: -55px;
+
+        em{
+            font-style: normal;
+            font-weight: 400;
+        }
+    }
+}
+
+nav{
+    margin-top: 2px;
+    background-color: $secondaryColor;
+    padding: 6px 0;
+
+    a{
+        padding: 15px 0;
+        width: 33.3%;
+        display: inline-block;
+        font-size: 21px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #fff;
+        text-shadow: 0 0 1px rgba(255,255,255,0.8);
+        border-right: 1px solid rgba(255,255,255,0.3);
+
+        &:first-child{
+            border-left: 1px solid rgba(255,255,255,0.3);
+        }
+    }
+}
+
+#content{
+    padding-top: 30px;
+
+    .oneChallenge{
+        border-radius: 8px;
+        background-color: $primaryColor;
+        margin: 30px 0 50px;
+        color: #fff;
+
+        &:nth-child(2n){
+            background-color: $secondaryColor;
+        }
+    }
+
+}

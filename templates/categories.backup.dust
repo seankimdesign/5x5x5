@@ -1,0 +1,20 @@
+{#entry}
+
+    <div class="oneEntry{?isToday} todayEntry{/isToday}" data-date="{dateid}">
+        <div class="entryDate">
+            <span class="dateYear">{year}</span>
+            <span class="dateMonth">{month}</span>
+            <span class="dateDate">{date}</span>
+        </div>
+        {@gt key=extras value=0}
+        <div class="moreEntries">+</div>
+        {/gt}
+        <div class="imageFrame">
+            <img src="/uploaded/{year}{month}/p_{dateid}.{extension}"/>
+        </div>
+        <p>
+
+        </p>
+    </div>
+
+{/entry}

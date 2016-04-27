@@ -1,0 +1,10 @@
+{@eq key=page value="stats"}
+    <a id="viewStats" href="/">Back Home</a>
+{:else}
+    <a id="viewStats" href="/stats">View Stats</a>
+{/eq}
+{@eq key=page value="manage"}
+    <a id="viewStats" href="/">Back Home</a>
+{:else}
+    <a id="manageTopics" href="/manage">Manage Topics</a>
+{/eq}

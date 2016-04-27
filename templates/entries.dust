@@ -1,0 +1,14 @@
+{#entries}
+    <div class="oneEntry">
+        <div class="entryInfo">
+            <h4>{name}</h4>
+            <div class="entryDetail">
+                {detail}
+            </div>
+            <div class="entryDate">
+                {entryDate}
+            </div>
+        </div>
+        <img class="entryImage" src="{entrySrc}">
+    </div>
+{/entries}
