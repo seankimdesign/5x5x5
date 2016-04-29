@@ -1,13 +1,28 @@
 {@eq key=page value="stats"}
-    <a id="viewStats" href="/">Back Home</a>
+    <div class="button" id="jumpHome">
+        <div class="face">Back Home</div>
+        <div class="tail">Back Home</div>
+    </div>
 {:else}
-    <a id="viewStats" href="/stats">View Stats</a>
+    <div class="button" id="jumpStats">
+        <div class="face">View Stats</div>
+        <div class="tail">View Stats</div>
+    </div>
 {/eq}
 
-    <a id="configureViews" href="/stats">Configure Views</a>
+    <div class="button" id="toggleFilter">
+        <div class="face">Configure Views</div>
+        <div class="tail">Configure Views</div>
+    </div>
 
 {@eq key=page value="manage"}
-    <a id="viewStats" href="/">Back Home</a>
+    <div class="button" id="jumpHome">
+        <div class="face">Back Home</div>
+        <div class="tail">Back Home</div>
+    </div>
 {:else}
-    <a id="manageTopics" href="/manage">Manage Topics</a>
+    <div class="button" id="jumpTopics">
+        <div class="face">Manage Topics</div>
+        <div class="tail">Manage Topics</div>
+    </div>
 {/eq}

@@ -1,6 +1,8 @@
 # 5x5x5
-#### Portfolio Management CMS using Node.js, Express and Dust.js
+#### Portfolio Management CMS using Node.js, Express, MongoDB and and Dust.js
 
-This is an academic project to engage the flexibility of Node.js platform. Frameworks such as Angular and React were intentionally avoided to fully leverage the Node.js and Express API, SPA (single-page-application) behavior was implemented by manually building DOM with Dust.js templating engine doing the heavy lifting.
+This is an academic project to examine the Node.js platform.
 
-The front-end solution has been created using pure javascript without any reliance on jQuery - another academic effort.
+Frameworks such as Angular and React were intentionally avoided to fully explore the Node.js / Express environment while leveraging the expressiveness of Dust.js templating engine. SPA (single-page-application) behavior was entirely written by hand, with each 'page' request culminating in partial view renders and DOM rebuilding.
+
+The front-end solution was also written in pure javascript without any reliance on jQuery or other library: another academic effort.

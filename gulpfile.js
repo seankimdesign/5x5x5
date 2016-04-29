@@ -40,10 +40,10 @@ gulp.task('watchall', function(){
             var tasks = []
             changedFiles.forEach(function (file) {
                 if (path.extname(file) == '.dust' && !~tasks.indexOf('dust')) tasks.push('dust')
-                if (~path.basename(file).indexOf('.scss')){
-                    if (!~path.basename(file).indexOf('critical-') && !~tasks.indexOf('criticalSass')){
+                if (path.extname(file) == '.scss'){
+                    if (~path.basename(file).indexOf('critical') && !~tasks.indexOf('criticalSass')){
                         tasks.push('criticalSass')
-                    } else if (!~tasks.indexOf('scss')){
+                    } else if (!~tasks.indexOf('sass')){
                         tasks.push('sass')
                     }
                 }

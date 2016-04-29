@@ -1,4 +1,5 @@
 @import 'config';
+@import 'mixins';
 
 body{
     background: #fff;
@@ -55,21 +56,33 @@ nav{
     background-color: $lightGrayColor;
     padding: 0;
     text-align: center;
+    height: 66px;
+    overflow: hidden;
 
-    a{
-        padding: 25px 0;
+    div.button{
+
         width: 20%;
         display: inline-block;
-        font-size: 17px;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        color: $secondaryColor;
-        text-shadow: 0 0 1px rgba(255,255,255,0.8);
-        border-right: 1px solid rgba(255,255,255,0.3);
+        cursor: pointer;
 
-        &:first-child{
-            border-left: 1px solid rgba(255,255,255,0.3);
+        > div{
+            padding: 20px;
+            height: 26px;
+            font-size: 17px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+
+            &.face{
+                color: $secondaryColor;
+                background-color: transparent;
+            }
+
+            &.tail{
+                visibility: hidden;
+                color: $lightGrayColor;
+                background-color: $secondaryColor;
+            }
         }
     }
 }

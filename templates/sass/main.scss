@@ -1,3 +1,49 @@
+@import 'config';
+@import 'mixins';
+
+@mixin contentColoring($primaryColor, $secondaryColor){
+
+}
+
+
+body{
+    &.color_red{
+        @include contentColoring($mainRedColor, $mainBlueColor);
+    }
+    &.color_blue{
+        @include contentColoring($mainBlueColor, $mainRedColor);
+    }
+
+    nav div.button{
+
+        > div{
+
+            @include transitionAll(.3s);
+            transform-origin: top;
+
+            &.face{
+                transform: perspective($perspective3D) rotateX(0) scaleY(1) scaleX(1);
+            }
+            &.tail{
+                transform: perspective($perspective3D) rotateX(-50deg) scaleY(0) scaleX(0.8) translateY(-66px);
+            }
+        }
+
+        &:hover >div{
+            &.face{
+                transform: perspective($perspective3D) rotateX(70deg) scaleY(0) scaleX(0.8);
+            }
+            &.tail{
+                visibility: visible;
+                transform: perspective($perspective3D) rotateX(0deg) scaleY(1) scaleX(1) translateY(-66px);
+            }
+        }
+    }
+}
+
+
+
+
 img.entryImage{
     max-width: 120px;
 }

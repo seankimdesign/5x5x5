@@ -39,20 +39,27 @@ header {
 nav {
   background-color: #f2f2f2;
   padding: 0;
-  text-align: center; }
-  nav a {
-    padding: 25px 0;
+  text-align: center;
+  height: 66px;
+  overflow: hidden; }
+  nav div.button {
     width: 20%;
     display: inline-block;
-    font-size: 17px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #b22b2d;
-    text-shadow: 0 0 1px rgba(255, 255, 255, 0.8);
-    border-right: 1px solid rgba(255, 255, 255, 0.3); }
-    nav a:first-child {
-      border-left: 1px solid rgba(255, 255, 255, 0.3); }
+    cursor: pointer; }
+    nav div.button > div {
+      padding: 20px;
+      height: 26px;
+      font-size: 17px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+      nav div.button > div.face {
+        color: #b22b2d;
+        background-color: transparent; }
+      nav div.button > div.tail {
+        visibility: hidden;
+        color: #f2f2f2;
+        background-color: #b22b2d; }
 
 #filterArea {
   padding: 5px 0;
