@@ -1,25 +1,24 @@
 {
-  "name": "draw-app",
+  "name": "5x5x5",
   "version": "0.0.5",
-  "description": "Draw-a-day Express App",
+  "description": "Portfolio Management CMS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Sean Kim Design",
-  "license": "ISC",
+  "author": "sean@seankimdesign.com",
+  "license": "MIT",
   "dependencies": {
     "adaro": "^1.0.4",
     "body-parser": "^1.15.0",
     "connect-busboy": "0.0.2",
     "express": "^4.13.4",
-    "gulp": "^3.9.1",
-    "gulp-nodemon": "^2.0.6",
-    "mongodb": "^2.1.7",
-    "nodemon": "^1.9.1"
+    "mongodb": "^2.1.7"
   },
   "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.0.6",
     "gulp-concat": "^2.6.0",
     "gulp-dust": "^3.0.0",
     "gulp-sass": "^2.2.0"
